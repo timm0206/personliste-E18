@@ -16,8 +16,8 @@
         <article>
             <h2> </h2>
             <p class="data-github"> </p>
-            <p class="data-website"> </p>
-            <p class="data-mail"> </p>
+            <a class="data-website" href=""> Website</a>
+            <p class="data-mail"></p>
             <p class="data-adresse"> </p>
             <p class="data-alder"> </p>
             <p class="data-civilstatus"> </p>
@@ -54,7 +54,7 @@
                 //indsæt data i html
                 klon.querySelector("h2").textContent = person.navn;
                 klon.querySelector(".data-github").textContent = person.github;
-                klon.querySelector(".data-website").textContent = person.website;
+                klon.querySelector(".data-website").href = person.website;
                 klon.querySelector(".data-mail").textContent = person.mail;
                 klon.querySelector(".data-adresse ").textContent = person.adresse;
                 klon.querySelector(".data-alder").textContent = person.alder;
